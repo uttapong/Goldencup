@@ -11,6 +11,14 @@
 <title>Welcome to Goldencup Thailand.</title>
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="fluid_style.css" rel="stylesheet" type="text/css">
+
+<link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+<link href="bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.js"></script>
+<script src="main.js"></script>
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -125,11 +133,15 @@ function MM_swapImgRestore() { //v3.0
         <tr>
           <td width="90%" align="center" valign="top"><table width="70%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td class="shadow vertical_align bg_youtube" width="100%"height="434" align="center" valign="middle" ><iframe width="95%" height="92%" src="https://www.youtube.com/embed/BoXHO3UXo0w" frameborder="0" allowfullscreen></iframe></td>
-                </tr>
-              </table></td>
+              <td align="center" valign="top" class="shadow vertical_align bg_youtube">
+              <div style="width: 807px;padding: 20px;" id="slider" class="slider owl-carousel owl-theme ">
+ 
+                      <div ><img src="images/demo_head_slide_1.jpg" alt="The Last of us"></div>
+                      <div ><img src="images/demo_head_slide_1.jpg" alt="GTA V"></div>
+                      <div ><img src="images/demo_head_slide_1.jpg" alt="Mirror Edge"></div>
+                     
+                    </div>
+              </td>
             </tr>
           </table></td>
         </tr>
@@ -137,18 +149,11 @@ function MM_swapImgRestore() { //v3.0
           <td height="30" align="left" valign="top"><a id="About2"></a></td>
         </tr>
         <tr>
-          <td align="center" valign="top"><table width="110" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="1" style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="2" style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="3"style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_2.png" alt="4" style="cursor:pointer"/></td>
-            </tr>
-          </table></td>
+          <td align="center" valign="top">
+            <div class="dots-container" style="height: 100px;"></div>
+          </td>
         </tr>
+
         <tr>
           <td height="80" align="left" valign="top">&nbsp;</td>
         </tr>
@@ -198,14 +203,25 @@ function MM_swapImgRestore() { //v3.0
           <td width="5%">&nbsp;</td>
           <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
+             
               <td width="47%" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td align="center" valign="top" class="vertical_align"><img src="images/pic_about_1.png" alt="pic_about" name="pic_about" id="pic_about" width="100%"></td>
+                  <td align="center" valign="top" class="vertical_align">
+<div style="max-width: 542px;" id="slider2" class="slider owl-carousel owl-theme ">
+ 
+                      <div ><img src="images/pic_about_1.png" alt="The Last of us"></div>
+                      <div ><img src="images/pic_about_2.png" alt="GTA V"></div>
+                      <div ><img src="images/pic_about_3.png" alt="Mirror Edge"></div>
+                      <div ><img src="images/pic_about_4.png" alt="Mirror Edge"></div>
+                     
+                    </div>
+                    <div class='dots-container2'></div>
+                  </td>
                 </tr>
                 <tr>
                   <td height="30"><a id="Products2"></a></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td align="center" valign="top"><table width="110" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                       <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="1" onclick="MM_swapImage('pic_about','','images/pic_about_1.png',1)" style="cursor:pointer"/></td>
@@ -217,7 +233,7 @@ function MM_swapImgRestore() { //v3.0
                       <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="1" onclick="MM_swapImage('pic_about','','images/pic_about_4.png',1)" style="cursor:pointer"/></td>
                     </tr>
                   </table></td>
-                </tr>
+                </tr> -->
               </table></td>
               <td width="6%">&nbsp;</td>
               <td width="47%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -305,7 +321,15 @@ function MM_swapImgRestore() { //v3.0
           <td height="30" align="center" valign="top">&nbsp;</td>
         </tr>
         <tr>
-          <td class="shadow vertical_align bg_youtube" height="220px" align="center" valign="middle" ><iframe width="95%" height="200px" src="https://www.youtube.com/embed/BoXHO3UXo0w" frameborder="0" allowfullscreen></iframe></td>
+          <td class="shadow vertical_align bg_youtube" height="220px" align="center" valign="middle" >
+            <div id="slider" class="slider owl-carousel owl-theme">
+ 
+                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="The Last of us"></div>
+                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="GTA V"></div>
+                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="Mirror Edge"></div>
+                     
+                    </div>
+          </td>
         </tr>
         <tr>
           <td width="90%" align="center" valign="top">&nbsp;</td>
@@ -477,12 +501,21 @@ function MM_swapImgRestore() { //v3.0
             <tr>
               <td width="47%" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td align="center" valign="top" class="vertical_align"><img src="images/pic_product_1.png" alt="pic_product" name="pic_product" id="pic_product"></td>
+                  <td align="center" valign="top" class="vertical_align">
+                  <div style="max-width: 450px;" id="slider3" class="slider owl-carousel owl-theme ">
+ 
+                      <div ><img src="images/pic_product_1.png" alt="The Last of us"></div>
+                      <div ><img src="images/pic_product_2.png" alt="GTA V"></div>
+                      <div ><img src="images/pic_product_3.png" alt="Mirror Edge"></div>
+                     
+                    </div>
+                    <div class='dots-container3'></div>
+                  </td>
                 </tr>
                 <tr>
                   <td height="30"><a id="Where"></a></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td align="center" valign="top"><table width="80" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                       <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product" onclick="MM_swapImage('pic_product','','images/pic_product_1.png',1)" style="cursor:pointer"/></td>
@@ -492,7 +525,7 @@ function MM_swapImgRestore() { //v3.0
                       <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product" onclick="MM_swapImage('pic_product','','images/pic_product_3.png',1)" style="cursor:pointer"/></td>
                       </tr>
                   </table></td>
-                </tr>
+                </tr> -->
               </table></td>
               <td width="6%">&nbsp;</td>
               <td width="47%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
