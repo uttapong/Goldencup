@@ -1,0 +1,22 @@
+{
+  "name": "Goldencup",
+  "version": "1.0.0",
+  "homepage": "http://www.siamcoder.com/godlencup",
+  "authors": [
+    "Uttapong Ruangrit <uttapong@gmail.com>"
+  ],
+  "description": "goldencup website",
+  "main": "index.html",
+  "keywords": [
+    "goldencup",
+    "parallax"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
