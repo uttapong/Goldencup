@@ -38,5 +38,21 @@ $(document).ready(function() {
      dotsClass: 'dots'
  
   });
+
+  $("#slider4").slick({
+ 
+     dots: false,
+     speed: 300,
+     autoplay:false,
+     autoplaySpeed: 3000,
+     arrows:true,
+     zIndex: 9,
+     dotsClass: 'dots',
+     infinite: true,
+  slidesToShow: 2,
+  prevArrow: $('.left-arrow'),
+  nextArrow: $('.right-arrow')
+ 
+  });
  
 });

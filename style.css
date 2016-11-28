@@ -709,6 +709,9 @@ a:active {
 .slider img{
 	width: 100%;
 }
+#slider4 div{
+padding: 0.7%;
+}
 
 .dots
 {
@@ -791,4 +794,22 @@ a:active {
 .dots li.slick-active button:before
 {
     color: #A10C16;
+}
+
+.left-arrow{
+	width: 50px;
+    margin: 170px 0px 0 40px;
+    display: block;
+    float: left;
+    top: 50%;
+    position: relative;
+}
+
+.right-arrow{
+	width: 50px;
+    margin: 170px 40px 0 0px;
+    display: block;
+    float: right;
+    top: 50%;
+    position: relative;
 }
