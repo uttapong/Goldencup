@@ -9,9 +9,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome to Goldencup Thailand.</title>
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="fluid_style.css" rel="stylesheet" type="text/css">
-
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
 <link href="bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
 
@@ -19,6 +20,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
 <script src="main.js"></script>
+<script src="js/tabby.js"></script>
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -62,9 +64,9 @@ function MM_swapImgRestore() { //v3.0
 
 
 </head>
-<body onLoad="MM_preloadImages('images/pic_about_1.png','images/pic_about_2.png','images/pic_about_3.png','images/pic_about_4.png')">
+<body>
 <div id="Header">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#a10d15">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#a10d15;">
     <tr>
       <td width="5%" height="100">&nbsp;</td>
       <td width="25%" class="vertical_align"><a href="#"><img src="images/logo_Goldencup.png" alt="Logo_Goldencup"></a></td>
@@ -134,7 +136,7 @@ function MM_swapImgRestore() { //v3.0
           <td width="90%" align="center" valign="top"><table width="70%" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td align="center" valign="top" class="shadow vertical_align bg_youtube">
-              <div style="width: 807px;padding: 20px;" id="slider" class="slider owl-carousel owl-theme ">
+              <div  id="slider" class="slider owl-carousel owl-theme head_cs_width">
  
                       <div ><img src="images/demo_head_slide_1.jpg" alt="The Last of us"></div>
                       <div ><img src="images/demo_head_slide_1.jpg" alt="GTA V"></div>
@@ -176,18 +178,18 @@ function MM_swapImgRestore() { //v3.0
       <td height="50">&nbsp;</td>
     </tr>
     <tr>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <td align="center" valign="top"><table data-tabs class='tabs' width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
           <td width="10%">&nbsp;</td>
           <td width="80%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-              <td width="24%" align="center" valign="top" class="about_menu_hover" style="cursor:pointer">INTRODUCTION</td>
+              <td width="24%" align="center" valign="top" class="about_menu_hover" style="cursor:pointer"><a data-tab href="#about-1">INTRODUCTION</a></td>
               <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_companyprofile.html" target="new">COMPANY PROFILE</a></td>
+              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a data-tab  href="#about-2">COMPANY PROFILE</a></td>
               <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_vision.html" target="new">VISION</a></td>
+              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_vision.html" >VISION</a></td>
               <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_manufacturing.html" target="new">MANUFACTURING</a></td>
+              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_manufacturing.html" >MANUFACTURING</a></td>
             </tr>
           </table></td>
           <td width="10%">&nbsp;</td>
@@ -203,9 +205,9 @@ function MM_swapImgRestore() { //v3.0
           <td width="5%">&nbsp;</td>
           <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
-             <div class="row">
+             <div data-tabs-pane class="row tabs-pane active" id="about-1">
              <div class='col-xs-6'>
-                   <div style="max-width: 542px;" id="slider2" class="slider owl-carousel owl-theme ">
+                  <div style="max-width: 542px;" id="slider2" class=" slider owl-carousel owl-theme ">
  
                       <div ><img src="images/pic_about_1.png" alt="The Last of us"></div>
                       <div ><img src="images/pic_about_2.png" alt="GTA V"></div>
@@ -219,32 +221,32 @@ function MM_swapImgRestore() { //v3.0
                   <div style="text-align: left;vertical-align: top;margin-bottom: 30px;">
                     <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
                   </div>
-                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</td>
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
+                  <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
+              </div>
+             </div>
+             <div data-tabs-pane class="row tabs-pane" id="about-2">
+             <div class='col-xs-6'>
+                  <div style="max-width: 542px;" id="slider2" class=" slider owl-carousel owl-theme ">
+ 
+                      <div ><img src="images/pic_companyprofile_1.png" alt="The Last of us"></div>
+                      <div ><img src="images/pic_companyprofile_2.png" alt="GTA V"></div>
+                      <div ><img src="images/pic_companyprofile_3.png" alt="Mirror Edge"></div>
+                      <div ><img src="images/pic_companyprofile_4.png" alt="Mirror Edge"></div>
+                     
+                    </div>
+                    <div class='dots-container2'></div>
+             </div>
+             <div class="col-xs-6">
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;">
+                    <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
+                  </div>
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
                   <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
               </div>
              </div>
               
-              <td width="6%">&nbsp;</td>
-              <td width="47%" align="left" valign="top">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td align="left" valign="top"><img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" width="100%"></td>
-                </tr>
-                <tr>
-                  <td height="30">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td align="left" valign="top" class="text_sub_header_2">INTRODUCTION</td>
-                </tr>
-                <tr>
-                  <td height="30">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td align="left" valign="top" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</td>
-                </tr>
-                </table>
-
-                </td>
+             
             </tr>
           </table></td>
           <td width="5%">&nbsp;</td>

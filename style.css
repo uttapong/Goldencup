@@ -706,7 +706,7 @@ a:active {
 }
 
 /* Dots */
-.slider img{
+#slider img{
 	width: 100%;
 }
 #slider4 div{
@@ -814,6 +814,7 @@ padding: 0.7%;
     position: relative;
 }
 
+
 /*!
  * Tabby v11.1.0: Simple, mobile-first toggle tabs.
  * (c) 2016 Chris Ferdinandi
@@ -850,3 +851,26 @@ padding: 0.7%;
 .js-tabby .tabs-pane:focus {
   outline: none;
 }
+.head_cs_width{
+		margin: 10px;
+	}
+@media screen and (max-width: 767px) { 
+	.head_cs_width{
+		width: 700px;
+		padding:10px;
+	}
+}
+@media  screen and  (min-width: 768px) and (max-width: 1366px) {
+	.head_cs_width{
+		width: 767px;
+		padding:10px;
+	}
+}
+@media  screen and  (min-width: 1367px) { 
+	.head_cs_width{
+		width: 900px;
+		padding:15px;
+	}
+
+}
+

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  tabby.init();
   $("#slider").slick({
  
      dots: true,

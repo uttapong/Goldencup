@@ -1,5 +1,5 @@
 {
-  "name": "Goldencup",
+  "name": "goldencup",
   "version": "1.0.0",
   "homepage": "http://www.siamcoder.com/godlencup",
   "authors": [
@@ -18,5 +18,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7"
+  }
 }
