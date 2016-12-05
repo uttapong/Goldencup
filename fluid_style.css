@@ -31,97 +31,22 @@ img, object, embed, video {
 
 #Header {
 	clear: both;
-	float: left;
 	margin-left: 0;
 	width: 100%;
-	display: none;
+	background-color: #a10d15;
+	border: none;
+	border-radius: 1px !important;
+	margin-bottom: 0px;
 }
-#Header_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	position: fixed;
-}
-#Intro {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#About {
+
+
+/*#Contact {
 	clear: both;
 	float: left;
 	margin-left: 0;
 	width: 100%;
 	display: none;
-}
-#Intro_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-#About_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-#Products {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Products_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-#Where_to_buy {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Where_to_buy_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-}
-#Gallery {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Gallery_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
-#Contact {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
+}*/
 #Contact_m {
 	clear: both;
 	float: left;
@@ -138,115 +63,81 @@ img, object, embed, video {
 	display: block;
 	background-color: #a10d15;
 }
+#Intro {
+	clear: both;
+	float: left;
+	margin: 0px 0 0 0;
+	width: 100%;
+	display: block;
+	background-image:url(images/bg_1.png);
+	background-repeat: no-repeat;
+	background-color: #fa9c1f;
+	 background-size: 100% auto;
+	 background-position: 0 -20px;
+	-webkit-transition: background-image 5s ease-in-out;
+	animation: animatedBackground 2s linear;
+}
+
+
+#Gallery {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	/*background-image:url(images/bg_2.png);*/
+	background-repeat: no-repeat;
+	 background-size: 100% auto;
+	 background-position: 0 -300px;
+}
+
+#About {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	b/*ackground-image:url(images/bg_2.png);*/
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-size: 100% auto;
+	 background-position: 0 -300px;
+}
+
+#Products {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	/*background-image:url(images/bg_3.png);*/
+	background-repeat: no-repeat;
+	background-color: #f8f8f8;
+	background-size: 100% auto;
+	background-position: 0 -300px;
+}
+
+#Where_to_buy {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #fa9c1f;
+	
+	display:none;
+}
+
+#Where_to_buy_m {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #fa9c1f;
+}
+
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
 
-#Header {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	position: fixed;
-}
-#Header_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Intro {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_1.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #fa9c1f;
-}
-#About {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_2.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #fff;
-}
-#Intro_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#About_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Products {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_3.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #f8f8f8;
-}
-#Products_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Where_to_buy {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	background-image:url(images/bg_4.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#Where_to_buy_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Gallery {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_2.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#Gallery_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
 #Contact {
 	clear: both;
 	float: left;
@@ -254,9 +145,10 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	background-color: #fa9c1f;
-	background-image:url(images/bg_5.png);
+	/*background-image:url(images/bg_5.png);*/
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-size: 100% auto;
+	background-position: 0 -300px;
 }
 #Contact_m {
 	clear: both;
@@ -272,6 +164,22 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	background-color: #a10d15;
+}
+
+#Where_to_buy {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #fa9c1f;
+	
+}
+#Where_to_buy_m {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
 }
 }
 
@@ -279,93 +187,6 @@ img, object, embed, video {
 
 @media only screen and (min-width: 769px) {
 
-#Header {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	position: fixed;
-}
-#Header_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Intro {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_1.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #fa9c1f;
-}
-#About {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_2.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #fff;
-}
-#Intro_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#About_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Products {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_3.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-	background-color: #f8f8f8;
-}
-#Products_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
-#Where_to_buy {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	background-image:url(images/bg_5.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#Where_to_buy_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
 #section_intro {
 	clear: both;
 	float: left;
@@ -380,23 +201,7 @@ img, object, embed, video {
 	width: 100%;
 	display: none;
 }
-#Gallery {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-image:url(images/bg_2.png);
-	background-repeat: no-repeat;
-	background-position: bottom;
-}
-#Gallery_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
+
 #Contact {
 	clear: both;
 	float: left;
@@ -404,9 +209,10 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	background-color: #fa9c1f;
-	background-image:url(images/bg_4.png);
+	/*background-image:url(images/bg_4.png);*/
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-size: 100% auto;
+	background-position: 0 -300px;
 }
 #Contact_m {
 	clear: both;
@@ -414,6 +220,7 @@ img, object, embed, video {
 	margin-left: 0;
 	width: 100%;
 	display: none;
+
 }
 #Footer {
 	clear: both;
@@ -422,5 +229,20 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	background-color: #a10d15;
+}
+#Where_to_buy {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #fa9c1f;
+	
+}
+#Where_to_buy_m {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: none;
 }
 }

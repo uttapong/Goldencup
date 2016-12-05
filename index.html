@@ -19,8 +19,10 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/slick-carousel/slick/slick.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/smooth-scroll.js/dist/js/smooth-scroll.js"></script>
+
 <script src="main.js"></script>
-<script src="js/tabby.js"></script>
 <!-- 
 To learn more about the conditional comments around the html tags at the top of the file:
 paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
@@ -38,662 +40,294 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 <link href="style.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript">
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-</script>
-
 
 </head>
 <body>
-<div id="Header">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#a10d15;">
-    <tr>
-      <td width="5%" height="100">&nbsp;</td>
-      <td width="25%" class="vertical_align"><a href="#"><img src="images/logo_Goldencup.png" alt="Logo_Goldencup"></a></td>
-      <td width="65%" align="right" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="50" align="right" class="bottom_align"><table width="110" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="30" align="center" valign="top"><img src="images/icon_langiage_en_hover.png" alt="icon_EN_language"></td>
-              <td width="10">&nbsp;</td>
-              <td width="30" align="center" valign="top"><a href="#"><img src="images/icon_langiage_th_normal.png" alt="icon_TH _language"></a></td>
-              <td width="10">&nbsp;</td>
-              <td width="30" align="right" valign="top"><a href="#"><img src="images/icon_facebook.png" alt="icon_facebook"></a></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="50" align="right" valign="middle" class="vertical_align">
-          <a href="#Home" class="font_main_menu">HOME</a>
-          <a href="#About2" class="font_main_menu">ABOUT US</a>
-          <a href="#Products2" class="font_main_menu">PRODUCTS</a>
-          <a href="#Where" class="font_main_menu">WHERE TO BUY</a>
-          <a href="#Gallery2" class="font_main_menu">GALLERY</a>
-          <a href="#Contact2" class="font_main_menu">CONTACT</a></td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
-</div>
+<nav id="Header" class="navbar navbar-default">
+  <div class="container-fluid" style="padding:0px !important;">
+    <div class="navbar-header">
+     
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gd-menu" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img id="logo" src="images/logo_Goldencup.png" alt="Logo_Goldencup"></a>
+      
 
+       
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse " id="gd-menu" style="margin-right: 20px;">
 
-<div id="Header_m">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#a10d15">
-    <tr>
-      <td width="5%" height="60">&nbsp;</td>
-      <td width="50%" class="vertical_align"><a href="#"><img src="images/logo_Goldencup.png" alt="logo_goldencup"></a></td>
-      <td width="40%" align="right" class="vertical_align"><table width="100" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="30" align="center" valign="top"><img src="images/icon_langiage_en_hover.png" alt="icon_EN_language"></td>
-          <td width="5">&nbsp;</td>
-          <td width="30" align="center" valign="top"><a href="#"><img src="images/icon_langiage_th_normal.png" alt="icon_TH _language"></a></td>
-          <td width="5">&nbsp;</td>
-          <td width="30" align="right" valign="top"><a href="#"><img src="images/icon_facebook.png" alt="icon_facebook"></a></td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
-</div>
+      <ul class="nav navbar-nav navbar-right">
+          
+          <li class="active"><a href="#Home" class="font_main_menu">HOME</a></li>
+          <li><a data-scroll href="#About" class="font_main_menu">ABOUT US</a></li>
+          <li><a data-scroll href="#Products" class="font_main_menu">PRODUCTS</a></li>
+          <li><a data-scroll href="#Where_to_buy" class="font_main_menu">WHERE TO BUY</a></li>
+          <li><a data-scroll href="#Gallery" class="font_main_menu">GALLERY</a></li>
+          <li><a data-scroll href="#Contact" class="font_main_menu">CONTACT</a></li>
+          <li class="social-menu"><a href="#"><img src="images/icon_langiage_en_hover.png" alt="icon_EN_language"></a>
+              <a href="#"><img src="images/icon_langiage_th_normal.png" alt="icon_TH _language"></a>
+          <a href="#"><img src="images/icon_facebook.png" alt="icon_facebook"></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
 
-
-<div id="Intro">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="5%"><a id="Home"></a></td>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="150" align="center" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><img src="images/text_head_section_1.png" alt="Text_Goldencup_1"></td>
-        </tr>
-        <tr>
-          <td height="30" align="center" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td width="90%" align="center" valign="top"><table width="70%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" valign="top" class="shadow vertical_align bg_youtube">
-              <div  id="slider" class="slider owl-carousel owl-theme head_cs_width">
+<div data-scroll id="Intro">
+  
+          <div align="center" class="col-xs-12" style="margin: 20px 0 20px 0;" valign="top"><img src="images/text_head_section_1.png" alt="Text_Goldencup_1"></div>
+    
+      
+          <div class="shadow vertical-align bg_youtube col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+              <div  id="slider" class="slider " style="padding: 15px;margin-bottom: 0px !important;">
  
-                      <div ><img src="images/demo_head_slide_1.jpg" alt="The Last of us"></div>
-                      <div ><img src="images/demo_head_slide_1.jpg" alt="GTA V"></div>
-                      <div ><img src="images/demo_head_slide_1.jpg" alt="Mirror Edge"></div>
+                      <div ><img src="images/demo_head_slide_1.jpg" alt=""></div>
+                      <div ><img src="images/demo_head_slide_1.jpg" alt=""></div>
+                      <div ><img src="images/demo_head_slide_1.jpg" alt=""></div>
+              </div>
+          </div>
+          <div class="dots-container  col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" style="height: 100px;"></div>
+</div>
+
+
+
+<div data-scroll class="slider_panel"  id="About">
+    <div class="text_sub_header col-xs-12 heading">ABOUT US</div>
+            <div class=" row tab-menu oval-menu about-menu">
+              <div class="col-xs-12  col-md-3 col-lg-3 centered"><a class='tab-link about_menu_hover' href="#about-1">INTRODUCTION</a></div>
+              <div class="col-xs-12  col-md-3  col-lg-3 centered"><a class='tab-link about_menu' href="#about-2">COMPANY PROFILE</a></div>
+              <div class="col-xs-12  col-md-3  col-lg-3 centered"><a class='tab-link about_menu' href="#about-3">VISION</a></div>
+              <div class="col-xs-12  col-md-3  col-lg-3 centered"><a class='tab-link about_menu' href="#about-4">MANUFACTURING</a></div>
+            </div>
+
+             <div class="row tabs-pane active tab-container col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="about-1">
+             <div class='col-lg-6 col-md-6 col-xs-12' style="padding: 0px !important;">
+                  <div id="slider2-1" class="col-xs-12 slider">
+ 
+                      <div ><img src="images/pic_about_1.png" alt=""></div>
+                      <div ><img src="images/pic_about_2.png" alt=""></div>
+                      <div ><img src="images/pic_about_3.png" alt=""></div>
+                      <div ><img src="images/pic_about_4.png" alt=""></div>
                      
                     </div>
-              </td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="30" align="left" valign="top"><a id="About2"></a></td>
-        </tr>
-        <tr>
-          <td align="center" valign="top">
-            <div class="dots-container" style="height: 100px;"></div>
-          </td>
-        </tr>
-
-        <tr>
-          <td height="80" align="left" valign="top">&nbsp;</td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
-</div>
-
-
-<div id="About">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td height="80" align="left" valign="top">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" class="text_sub_header">ABOUT US</td>
-    </tr>
-    <tr>
-      <td height="50">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><table data-tabs class='tabs' width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="10%">&nbsp;</td>
-          <td width="80%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="24%" align="center" valign="top" class="about_menu_hover" style="cursor:pointer"><a data-tab href="#about-1">INTRODUCTION</a></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a data-tab  href="#about-2">COMPANY PROFILE</a></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_vision.html" >VISION</a></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="about_manufacturing.html" >MANUFACTURING</a></td>
-            </tr>
-          </table></td>
-          <td width="10%">&nbsp;</td>
-        </tr>
-      </table></td>
-    </tr>
-    <tr>
-      <td height="80">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="5%">&nbsp;</td>
-          <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-             <div data-tabs-pane class="row tabs-pane active" id="about-1">
-             <div class='col-xs-6'>
-                  <div style="max-width: 542px;" id="slider2" class=" slider owl-carousel owl-theme ">
- 
-                      <div ><img src="images/pic_about_1.png" alt="The Last of us"></div>
-                      <div ><img src="images/pic_about_2.png" alt="GTA V"></div>
-                      <div ><img src="images/pic_about_3.png" alt="Mirror Edge"></div>
-                      <div ><img src="images/pic_about_4.png" alt="Mirror Edge"></div>
-                     
-                    </div>
-                    <div class='dots-container2'></div>
+                    <div class='dots-container2-1 col-xs-12'></div>
              </div>
-             <div class="col-xs-6">
-                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;">
+             <div class="col-lg-6 col-md-6 col-xs-12" >
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="heading">
                     <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
                   </div>
                   <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
                   <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
               </div>
              </div>
-             <div data-tabs-pane class="row tabs-pane" id="about-2">
-             <div class='col-xs-6'>
-                  <div style="max-width: 542px;" id="slider2" class=" slider owl-carousel owl-theme ">
+
+             <div class="row tabs-pane tab-container col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="about-2">
+             <div class='col-lg-6 col-md-6 col-xs-12'>
+                  <div style="max-width: 542px;" id="slider2-2" class=" slider ">
  
-                      <div ><img src="images/pic_companyprofile_1.png" alt="The Last of us"></div>
-                      <div ><img src="images/pic_companyprofile_2.png" alt="GTA V"></div>
-                      <div ><img src="images/pic_companyprofile_3.png" alt="Mirror Edge"></div>
-                      <div ><img src="images/pic_companyprofile_4.png" alt="Mirror Edge"></div>
+                      <div ><img src="images/pic_companyprofile_1.png" alt=""></div>
+                      <div ><img src="images/pic_companyprofile_2.png" alt=""></div>
+                      <div ><img src="images/pic_companyprofile_3.png" alt=""></div>
+                      <div ><img src="images/pic_companyprofile_4.png" alt=""></div>
                      
                     </div>
-                    <div class='dots-container2'></div>
+                    <div class='dots-container2-2'></div>
              </div>
-             <div class="col-xs-6">
-                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;">
+             <div class="col-lg-6 col-md-6 col-xs-12">
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;"  class="heading">
                     <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
                   </div>
                   <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
                   <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
               </div>
              </div>
-              
-             
-            </tr>
-          </table></td>
-          <td width="5%">&nbsp;</td>
-        </tr>
-      </table></td>
-    </tr>
-    <tr>
-      <td height="80">&nbsp;</td>
-    </tr>
-  </table>
-</div>
 
-
-<div id="Intro_m">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#fa9c1f">
-    <tr>
-      <td width="5%">&nbsp;</td>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="90" align="left" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="bg_mobile_menu"><a href="#Home_m" class="mobile">HOME</a></td>
-              </tr>
-            <tr>
-              <td height="20" align="center" valign="top">&nbsp;</td>
-              </tr>
-            <tr>
-              <td class="bg_mobile_menu"><a href="#About_m2" class="mobile">ABOUT US</a></td>
-              </tr>
-            <tr>
-              <td height="20">&nbsp;</td>
-            </tr>
-            <tr>
-              <td class="bg_mobile_menu"><a href="#Product_m" class="mobile">PRODUCTS</a></td>
-              </tr>
-            <tr>
-              <td height="20" align="center" valign="top">&nbsp;</td>
-              </tr>
-            <tr>
-              <td class="bg_mobile_menu"><a href="#" class="mobile"></a><a href="#Where_m" class="mobile">WHERE TO BUY</a></td>
-              </tr>
-            <tr>
-              <td height="20" align="center" valign="top">&nbsp;</td>
-              </tr>
-            <tr>
-              <td class="bg_mobile_menu"><a href="#Gallery_m3" class="mobile">GALLERY</a></td>
-              </tr>
-            <tr>
-              <td height="20" align="left" valign="top"><a id="Home_m"></a></td>
-              </tr>
-            <tr>
-              <td class="bg_mobile_menu"><a href="#" class="mobile"></a><a href="#Contact_m2" class="mobile">CONTACT</a></td>
-              </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="30" align="left" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><img src="images/text_head_section_1.png" alt="Text_Goldencup"></td>
-        </tr>
-        <tr>
-          <td height="30" align="center" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td class="shadow vertical_align bg_youtube" height="220px" align="center" valign="middle" >
-            <div id="slider" class="slider owl-carousel owl-theme">
+             <div class="row tabs-pane tab-container col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="about-3">
+             <div class='col-lg-6 col-md-6 col-xs-12'>
+                  <div style="max-width: 542px;" id="slider2-3" class=" slider ">
  
-                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="The Last of us"></div>
-                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="GTA V"></div>
-                      <div class="item"><img src="images/demo_head_slide_1.jpg" alt="Mirror Edge"></div>
+                      <div ><img src="images/pic_vision_1.png" alt=""></div>
+                      <div ><img src="images/pic_vision_2.png" alt=""></div>
+                      <div ><img src="images/pic_vision_3.png" alt=""></div>
+                      <div ><img src="images/pic_vision_4.png" alt=""></div>
                      
                     </div>
-          </td>
-        </tr>
-        <tr>
-          <td width="90%" align="center" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td height="20" align="left" valign="top"><a id="About_m2"></a></td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="110" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="1" style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="2" style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="3"style="cursor:pointer"/></td>
-              <td width="10">&nbsp;</td>
-              <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_2.png" alt="4" style="cursor:pointer"/></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="30" align="center" valign="top">&nbsp;</td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
-</div>
+                    <div class='dots-container2-3'></div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-xs-12">
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;"  class="heading">
+                    <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
+                  </div>
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
+                  <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
+              </div>
+             </div>
 
-
-<div id="About_m">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="5%">&nbsp;</td>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="50" align="left" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><span class="text_sub_header">ABOUT US</span></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="about_menu_hover" style="cursor:pointer">INTRODUCTION</td>
-              </tr>
-            <tr>
-              <td height="20" align="center" valign="top" style="cursor:pointer">&nbsp;</td>
-              </tr>
-            <tr>
-              <td class="about_menu" style="cursor:pointer"><a href="about_companyprofile.html" target="new">COMPANY PROFILE</a></td>
-              </tr>
-            <tr>
-              <td height="20" align="center" valign="top" style="cursor:pointer">&nbsp;</td>
-              </tr>
-            <tr>
-              <td class="about_menu" style="cursor:pointer"><a href="about_vision.html" target="new">VISION</a></td>
-            </tr>
-            <tr>
-              <td height="20">&nbsp;</td>
-            </tr>
-            <tr>
-              <td class="about_menu" style="cursor:pointer"><a href="about_manufacturing.html" target="new">MANUFACTURING</a></td>
-              </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="50">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><img src="images/text_head_section_2.png" alt="text_goldcup_2" width="100%"></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><span class="text_sub_header_2">INTRODUCTION</span></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="left" valign="top"><span class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</span></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" valign="top" class="vertical_align"><img src="images/pic_about_1.png" alt="pic_about_m" name="pic_about_m" id="pic_about_m" width="100%"></td>
-            </tr>
-            <tr>
-              <td height="30"><a id="Product_m"></a></td>
-            </tr>
-            <tr>
-              <td align="center" valign="top"><table width="110" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="m1" onclick="MM_swapImage('pic_about_m','','images/pic_about_1.png',1)" style="cursor:pointer"/></td>
-                  <td width="10">&nbsp;</td>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="m2" onclick="MM_swapImage('pic_about_m','','images/pic_about_2.png',1)" style="cursor:pointer"/></td>
-                  <td width="10">&nbsp;</td>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="m3" onclick="MM_swapImage('pic_about_m','','images/pic_about_3.png',1)" style="cursor:pointer"/></td>
-                  <td width="10">&nbsp;</td>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="m4" onclick="MM_swapImage('pic_about_m','','images/pic_about_4.png',1)" style="cursor:pointer"/></td>
-                </tr>
-              </table></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
-</div>
-
-<div id="Products">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td height="80" align="left" valign="top">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" class="text_sub_header">PRODUCTS</td>
-    </tr>
-    <tr>
-      <td height="50">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="10%">&nbsp;</td>
-          <td width="80%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="24%" align="center" valign="top" style="cursor:pointer"><img src="images/pic_product_menu_1.png" alt="golden_cup_palm"><br>
-                <span class="font_normal_2"><br>
-                  GOLDEN CUP PALM</span></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" style="cursor:pointer"><a href="product_goldencupoil.html" target="new"><img src="images/pic_product_menu_2.png" alt="golden_cup_oil"></a><br>
-                <span class="font_normal_2"><br>
-                  GOLDEN CUP OIL</span></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" style="cursor:pointer"><a href="product_kiddypalm.html" target="new"><img src="images/pic_product_menu_3.png" alt="kiddy_palm"></a><br>
-                <span class="font_normal_2"><br>
-                  KIDDY PALM</span></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" style="cursor:pointer"><a href="product_medicines.html" target="new"><img src="images/pic_product_menu_4.png" alt="medicines"></a><br>
-                <span class="font_normal_2"><br>
-                  MEDICINES</span></td>
-            </tr>
-          </table></td>
-          <td width="10%">&nbsp;</td>
-        </tr>
-      </table></td>
-    </tr>
-    <tr>
-      <td height="80">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="5%">&nbsp;</td>
-          <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="47%" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td align="center" valign="top" class="vertical_align">
-                  <div style="max-width: 450px;" id="slider3" class="slider owl-carousel owl-theme ">
+             <div class="row tabs-pane tab-container col-xs-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="about-4">
+             <div class='col-lg-6 col-md-6 col-xs-12'>
+                  <div style="max-width: 542px;" id="slider2-4" class=" slider ">
  
-                      <div ><img src="images/pic_product_1.png" alt="The Last of us"></div>
-                      <div ><img src="images/pic_product_2.png" alt="GTA V"></div>
-                      <div ><img src="images/pic_product_3.png" alt="Mirror Edge"></div>
+                      <div ><img src="images/pic_manufacturing_1.png" alt=""></div>
+                      <div ><img src="images/pic_manufacturing_2.png" alt=""></div>
+                      <div ><img src="images/pic_manufacturing_3.png" alt=""></div>
+                      <div ><img src="images/pic_manufacturing_4.png" alt=""></div>
                      
                     </div>
-                    <div class='dots-container3'></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td height="30"><a id="Where"></a></td>
-                </tr>
-                <!-- <tr>
-                  <td align="center" valign="top"><table width="80" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product" onclick="MM_swapImage('pic_product','','images/pic_product_1.png',1)" style="cursor:pointer"/></td>
-                      <td width="10">&nbsp;</td>
-                      <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product" onclick="MM_swapImage('pic_product','','images/pic_product_2.png',1)" style="cursor:pointer"/></td>
-                      <td width="10">&nbsp;</td>
-                      <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product" onclick="MM_swapImage('pic_product','','images/pic_product_3.png',1)" style="cursor:pointer"/></td>
-                      </tr>
-                  </table></td>
-                </tr> -->
-              </table></td>
-              <td width="6%">&nbsp;</td>
-              <td width="47%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td height="30" align="left" valign="top" bgcolor="#fa9c1f" class="font_normal">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td bgcolor="#a10d15"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td width="50" rowspan="3">&nbsp;</td>
-                      <td height="20">&nbsp;</td>
-                      <td width="50" rowspan="3">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td align="left" valign="top"><span class="text_sub_header_3">GOLDEN CUP PALM</span></td>
-                      </tr>
-                    <tr>
-                      <td height="20">&nbsp;</td>
-                      </tr>
-                  </table></td>
-                </tr>
-                <tr>
-                  <td align="left" valign="top" bgcolor="#fa9c1f"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td width="50" rowspan="3">&nbsp;</td>
-                      <td height="30">&nbsp;</td>
-                      <td width="50" rowspan="3">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td align="left" valign="top" class="font_normal_3"><p>Made from herbal ingredients offering gentle.
+                    <div class='dots-container2-4'></div>
+             </div>
+             <div class="col-lg-6 col-md-6 col-xs-12">
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;"  class="heading">
+                    <img src="images/text_head_section_2.png" alt="Text_Goldencup_Header_2" style="width:100%"/>
+                  </div>
+                  <div style="text-align: left;vertical-align: top;margin-bottom: 30px;" class="text_sub_header_2">INTRODUCTION</div>
+                  <div style="text-align: left;vertical-align: top;" class="font_normal">Established in 1950, Golden Cup Pharmaceutical Co., Ltd. is among Thailand’s leading pharmaceutical manufacturers. For over 60 years, Golden Cup Pharmaceutical has served Thailand not only with a very well recognized “Golden Cup Balm”, but also with a number of  modern pharmaceutical products under “Golden Cup” trademark.</div>
+              </div>
+             </div>
+</div>
+
+
+ 
+<div data-scroll id="Products" class="slider_panel">
+   <div class="text_sub_header col-xs-12 heading">PRODUCTS</div>
+      <div class="row tab-menu col-xs-12">
+        <div class="col-xs-6 col-md-3  col-lg-2 col-lg-offset-2 centered tab-menu"><a class='tab-link' href="#product-1"><img class='tab-link' src="images/pic_product_menu_1.png" alt="golden_cup_palm"><br>
+          <span class="font_normal_2"><br>
+          GOLDEN CUP PALM</span></a></div>
+          <div class="col-xs-6 col-md-3  col-lg-2 centered tab-menu"><a  class='tab-link' href="#product-2" ><img class='tab-link' src="images/pic_product_menu_2.png" alt="golden_cup_oil"><br>
+            <span class="font_normal_2"><br>
+            GOLDEN CUP OIL</span></a></div>
+            <div class="col-xs-6 col-md-3  col-lg-2 centered tab-menu"><a  class='tab-link' href="#product-3" ><img class='tab-link' src="images/pic_product_menu_3.png" alt="kiddy_palm"><br>
+              <span class="font_normal_2"><br>
+              KIDDY PALM</span></a></div>
+              <div class="col-xs-6 col-md-3  col-lg-2 centered tab-menu"><a  class='tab-link' href="#product-4" ><img class='tab-link' src="images/pic_product_menu_4.png" alt="medicines"><br>
+                <span class="font_normal_2"><br>
+               MEDICINES</span></a></div>
+     </div>
+
+           <div  class="row tabs-pane active tab-container" id="product-1">
+             <div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12'>
+                  <div style="max-width: 450px;" id="slider3-1" class=" slider ">
+ 
+                      <div ><img src="images/pic_product_1.png" alt=""></div>
+                      <div ><img src="images/pic_product_2.png" alt=""></div>
+                      <div ><img src="images/pic_product_3.png" alt=""></div>
+                     
+                    </div>
+                    <div class='dots-container3-1'></div>
+             </div>
+             <div class="col-lg-4 col-md-5 col-xs-12 text-left heading" style="background-color: #fa9c1f;padding:0 !important;">
+                  <div class="col-xs-12 text_header_3" >
+                  <span >GOLDEN CUP PALM</span>
+                  </div>
+                  <div class="col-xs-12" style="padding-left: 40px;font-size:1em;" >
+                  <p class='text_normal_3'>Made from herbal ingredients offering gentle.
                       <br>
                       Proven relief for</p>
-                    <span class="font_normal_4"><p>• muscular pain<br>
+
+                      <span class="font_normal_4"><p>• muscular pain<br>
                       • insect bite<br>
                       • headache<br>
                       • nasal congestion</p></span>
-<p>And multipurpose relief for burns, dizziness, eczema, itching, rheumatism, sprain, etc.</p><p>Ingredient list : Menthol, Camphor, Methyl Salicylate, Eucalyptus Oil, etc.</p></td>
-                    </tr>
-                    <tr>
-                      <td height="50">&nbsp;</td>
-                    </tr>
-                  </table></td>
-                </tr>
-              </table></td>
-            </tr>
-          </table></td>
-          <td width="5%">&nbsp;</td>
-        </tr>
-      </table></td>
-    </tr>
-    <tr>
-      <td height="80">&nbsp;</td>
-    </tr>
-  </table>
-</div>
+<p>And multipurpose relief for burns, dizziness, eczema, itching, rheumatism, sprain, etc.</p><p>Ingredient list : Menthol, Camphor, Methyl Salicylate, Eucalyptus Oil, etc.</p>
+                    </div>
+              </div>
+             </div>
 
+             <div  class="row tabs-pane active tab-container" id="product-2">
+             <div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12'>
+                  <div style="max-width: 450px;" id="slider3-2" class=" slider ">
+ 
+                      <div ><img src="images/pic_product_goldencupoil_1.png" alt=""></div>
+                      <div ><img src="images/pic_product_goldencupoil_2.png" alt=""></div>
+                      <div ><img src="images/pic_product_goldencupoil_3.png" alt=""></div>
+                     
+                    </div>
+                    <div class='dots-container3-2'></div>
+             </div>
+             <div class="col-lg-4 col-md-5 col-xs-12 text-left heading" style="background-color: #fa9c1f;padding:0 !important;">
+                  <div class="col-xs-12 text_header_3" >
+                  <span >GOLDEN CUP OIL</span>
+                  </div>
+                  <div class="col-xs-12" style="padding-left: 40px;font-size:1em;" >
+                  <p class='text_normal_3'>A blend of naturally occurring oils and botanical essences
+                      <br>
+                      Offering concentrated relief for</p>
 
-<div id="Products_m">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="5%">&nbsp;</td>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="50" align="left" valign="top">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><span class="text_sub_header">PRODUCTS</span></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="left" valign="top" style="cursor:pointer"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="48%" align="center" valign="top" style="cursor:pointer"><img src="images/pic_product_menu_1.png" alt="golden_cup_palm"><br><span class="font_normal_2"><br>GOLDEN CUP PALM</span></td>
-                  <td width="4%">&nbsp;</td>
-                  <td width="48%" align="center" valign="top" style="cursor:pointer"><a href="product_goldencupoil.html" target="new"><img src="images/pic_product_menu_2.png" alt="golden_cup_oil"></a><br><span class="font_normal_2"><br>GOLDEN CUP OIL</span></td>
-                  </tr>
-                <tr>
-                  <td height="20" colspan="3" align="center" valign="top">&nbsp;</td>
-                  </tr>
-                <tr>
-                  <td width="48%" align="center" valign="top" style="cursor:pointer"><a href="product_kiddypalm.html" target="new"><img src="images/pic_product_menu_3.png" alt="kiddy_palm"></a><br><span class="font_normal_2"><br>KIDDY PALM</span></td>
-                  <td width="4%">&nbsp;</td>
-                  <td width="48%" align="center" valign="top" style="cursor:pointer"><a href="product_medicines.html" target="new"><img src="images/pic_product_menu_4.png" alt="medicines"></a><br><span class="font_normal_2"><br>MEDICINES</span></td>
-                  </tr>
-                </table></td>
-            </tr>
-            </table></td>
-        </tr>
-        <tr>
-          <td height="50">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td height="30" align="left" valign="top" bgcolor="#fa9c1f" class="font_normal">&nbsp;</td>
-              </tr>
-            <tr>
-              <td bgcolor="#a10d15"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="20" rowspan="3">&nbsp;</td>
-                  <td height="20">&nbsp;</td>
-                  <td width="20" rowspan="3">&nbsp;</td>
-                  </tr>
-                <tr>
-                  <td align="center" valign="top"><span class="text_sub_header_3">GOLDEN CUP PALM</span></td>
-                  </tr>
-                <tr>
-                  <td height="20">&nbsp;</td>
-                  </tr>
-                </table></td>
-              </tr>
-            <tr>
-              <td align="left" valign="top" bgcolor="#fa9c1f"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="50" rowspan="3">&nbsp;</td>
-                  <td height="30">&nbsp;</td>
-                  <td width="50" rowspan="3">&nbsp;</td>
-                  </tr>
-                <tr>
-                  <td align="left" valign="top" class="font_normal_3"><p>Made from herbal ingredients offering gentle.
+                      <span class="font_normal_4"><p>• nasal congestion<br>
+                • headache<br>
+                • muscular pain<br>
+                • insect bite</p></span>
+<p>Ingredient list : Camphor, Menthol, Peppermint Oil, etc.</p>
+                    </div>
+              </div>
+             </div>
+
+             <div  class="row tabs-pane active tab-container" id="product-3">
+             <div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12'>
+                  <div style="max-width: 450px;" id="slider3-3" class=" slider ">
+ 
+                      <div ><img src="images/pic_product_kiddypalm_1.png" alt=""></div>
+                      <div ><img src="images/pic_product_kiddypalm_2.png" alt=""></div>
+                      <div ><img src="images/pic_product_kiddypalm_3.png" alt=""></div>
+                     
+                    </div>
+                    <div class='dots-container3-3'></div>
+             </div>
+             <div class="col-lg-4 col-md-5 col-xs-12 text-left heading" style="background-color: #fa9c1f;padding:0 !important;">
+                  <div class="col-xs-12 text_header_3" >
+                  <span >KIDDY PALM</span>
+                  </div>
+                  <div class="col-xs-12" style="padding-left: 40px;font-size:1em;" >
+                  <p class='text_normal_3'>    
+Delicate formula for kids, babies and the most sensitive skin.
+                      <br>
+                      It is best suited for :</p>
+
+                      <span class="font_normal_4"><p>• insect bite<br>
+                • nasal congestion</p></span>
+<p>Ingredient list : Eucalyptus Oil, Camphor, Menthol, etc.</p>
+                    </div>
+              </div>
+             </div>
+
+             <div  class="row tabs-pane active tab-container" id="product-4">
+             <div class='col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12'>
+                  <div style="max-width: 450px;" id="slider3-4" class=" slider ">
+ 
+                      <div ><img src="images/pic_product_medicines_1.png" alt=""></div>
+                      <div ><img src="images/pic_product_medicines_2.png" alt=""></div>
+                      <div ><img src="images/pic_product_medicines_3.png" alt=""></div>
+                     
+                    </div>
+                    <div class='dots-container3-4'></div>
+             </div>
+             <div class="col-lg-4 col-md-5 col-xs-12 text-left heading" style="background-color: #fa9c1f;padding:0 !important;">
+                  <div class="col-xs-12 text_header_3" >
+                  <span> MEDICINES</span>
+                  </div>
+                  <div class="col-xs-12" style="padding-left: 40px;font-size:1em;" >
+                  <p class='text_normal_3'>Made from herbal ingredients offering gentle.
                       <br>
                       Proven relief for</p>
-                    <span class="font_normal_4"><p>• muscular pain<br>
-                      • insect bite<br>
-                      • headache<br>
-                      • nasal congestion</p></span>
-<p>And multipurpose relief for burns, dizziness, eczema, itching, rheumatism, sprain, etc.</p><p>Ingredient list : Menthol, Camphor, Methyl Salicylate, Eucalyptus Oil, etc.</p></td>
-                  </tr>
-                <tr>
-                  <td height="50">&nbsp;</td>
-                  </tr>
-                </table></td>
-              </tr>
-            </table></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" valign="top" class="vertical_align"><img src="images/pic_product_1.png" alt="pic_product_m" name="pic_product_m" id="pic_product_m"></td>
-            </tr>
-            <tr>
-              <td height="30"><a id="Where_m"></a></td>
-            </tr>
-            <tr>
-              <td align="center" valign="top"><table width="80" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product_m1" onclick="MM_swapImage('pic_product_m','','images/pic_product_1.png',1)" style="cursor:pointer"/></td>
-                  <td width="10">&nbsp;</td>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product_m1" onclick="MM_swapImage('pic_product_m','','images/pic_product_2.png',1)" style="cursor:pointer"/></td>
-                  <td width="10">&nbsp;</td>
-                  <td width="20" height="20" align="center" valign="top"><img src="images/icon_nextslide_1.png" alt="product_m1" onclick="MM_swapImage('pic_product_m','','images/pic_product_3.png',1)" style="cursor:pointer"/></td>
-                  </tr>
-              </table></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
+
+                      <span class="font_normal_4"><p>Beside Golden Cup Balm, Golden Cup Pharmaceutical also serves the need of 
+Thais with a number of OTC medicines under the Golden Cup trademark. Within 
+a GMP certified production environment, the company produces more than 30 pharmaceutical products, such as</p>
+<p><span class="font_normal_4">Golden Cup Toothache:</span> <span class="font_normal_3">Solution helps to relieve toothache by dropping at the affected area.</span></p>
+<p><span class="font_normal_4">Athena Prickly Heat Powder:</span> <span class="font_normal_3">For your freshness and sparkle, apply after shower or at convenient for immediate 
+relaxation with the aid of menthol for coolest.</span></p>
+
+                    </div>
+              </div>
+             </div>
 </div>
 
 
-<div id="Where_to_buy">
+<div data-scroll id="Where_to_buy">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td height="80" align="left" valign="top">&nbsp;</td>
@@ -764,7 +398,7 @@ function MM_swapImgRestore() { //v3.0
 </div>
 
 
-<div id="Where_to_buy_m"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+<div data-scroll id="Where_to_buy_m"><table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="5%">&nbsp;</td>
       <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -930,140 +564,53 @@ function MM_swapImgRestore() { //v3.0
 </table></div>
 
 
-<div id="Gallery">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td height="80" align="left" valign="top">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" class="text_sub_header">GALLERY</td>
-    </tr>
-    <tr>
-      <td height="50">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td width="10%">&nbsp;</td>
-          <td width="80%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="24%" align="center" valign="top" style="cursor:pointer">&nbsp;</td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu_hover" style="cursor:pointer">FACTORY</td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" class="about_menu" style="cursor:pointer"><a href="#">ADVERTISING</a></td>
-              <td width="1%">&nbsp;</td>
-              <td width="24%" align="center" valign="top" style="cursor:pointer">&nbsp;</td>
-            </tr>
-          </table></td>
-          <td width="10%">&nbsp;</td>
-        </tr>
-      </table></td>
-    </tr>
-    <tr>
-      <td height="80">&nbsp;</td>
-    </tr>
-    <tr>
-      <td align="left" valign="top">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-            <div class="gallery-container" style="margin: 0px auto;text-align: center;width: 100%;">
-            <div class="left-arrow"><img src="images/icon_left.png" alt="icon_left" style="cursor:pointer"></div>
-            <div style="max-width: 1024px;margin:0px auto;display:inline-block;" id="slider4" class="slider owl-carousel owl-theme ">
+<div data-scroll id="Gallery" class="row slider_panel">
  
-                      <div ><img src="images/pic_gallery_1.png" alt="The Last of us"></div>
-                      <div ><img src="images/pic_gallery_2.png" alt="GTA V"></div>
-                      <div ><img src="images/pic_gallery_3.png" alt="Mirror Edge"></div>
-                      <div ><img src="images/pic_gallery_4.png" alt="Mirror Edge"></div>
+      <div class="text_sub_header col-xs-12 heading">GALLERY</div>
+   
+            <div class=" row tab-menu oval-menu">
+              <div class="col-xs-12 col-md-2 col-md-offset-4 centered"><a class='tab-link  about_menu_hover' href="#gallery-1">FACTORY</a></div>
+              <div class="col-xs-12 col-md-2 centered" ><a class='tab-link  about_menu' href="#gallery-2">ADVERTISING</a></div>
+            </div>
+  
+           
+
+            <div  class="row tabs-pane active tab-container" id="gallery-1">   
+            <div class="col-xs-1 col-md-2 col-lg-2 left-arrow left-arrow4-1"><img src="images/icon_left.png" alt="icon_left" style="cursor:pointer"></div>
+             <div class='col-xs-12 col-md-8 col-lg-8'>
+                  <div  id="slider4-1" class="gallery slider ">
+ 
+                      <div ><img src="images/pic_gallery_1.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_2.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_3.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_4.png" alt=""></div>
                      
                     </div>
-               <div class="right-arrow"><img src="images/icon_right.png" alt="icon_left" style="cursor:pointer"></div>
-               </div>
-              <!-- <td width="5%" align="center" valign="bottom" class="bottom_align">&nbsp;</td>
-              <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="8%" align="left" valign="middle" class="vertical_align"><img src="images/icon_left.png" alt="icon_left" style="cursor:pointer"></td>
-                  <td colspan="3" align="center" valign="top"><img src="images/pic_gallery_3.png" alt="pic_gallery" style="cursor:pointer"></td>
-                  <td width="6%">&nbsp;</td>
-                  <td colspan="3" align="center" valign="top"><img src="images/pic_gallery_4.png" alt="pic_gallery" style="cursor:pointer"></td>
-                  <td width="8%" align="right" valign="middle" class="vertical_align"><img src="images/icon_right.png" alt="icon_right" style="cursor:pointer"></td>
-                </tr>
-                </table></td> -->
-              <td width="5%">&nbsp;</td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="80" align="left" valign="top"><a id="Contact2"></a></td>
-        </tr>
-      </table>
-      </td>
-    </tr>
-  </table>
-</div>
+                    <div class='dots-container4-1'></div>
+             </div>
+             <div class="right-arrow right-arrow4-1 col-xs-1 col-md-2 col-lg-2"><img src="images/icon_right.png" alt="icon_left" style="cursor:pointer"></div>
+             </div>
 
-<div id="Gallery_m">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="5%">&nbsp;</td>
-      <td width="90%" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-          <td height="50" align="left" valign="top"><a id="Gallery_m"></a></td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><span class="text_sub_header">GALLERY</span></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td class="about_menu_hover" style="cursor:pointer">FACTORY</td>
-            </tr>
-            <tr>
-              <td height="20" align="center" valign="top" style="cursor:pointer">&nbsp;</td>
-            </tr>
-            <tr>
-              <td class="about_menu" style="cursor:pointer"><a href="#">ADVERTISING</a></td>
-            </tr>
-          </table></td>
-        </tr>
-        <tr>
-          <td height="50">&nbsp;</td>
-        </tr>
-        <tr>
-          <td align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" valign="top" class="vertical_align"><img src="images/pic_gallery_3.png" alt="pic_gallery" style="cursor:pointer"></td>
-              </tr>
-            <tr>
-              <td height="30">&nbsp;</td>
-              </tr>
-            <tr>
-              <td height="50" align="center" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="50" align="left" valign="top"><span class="vertical_align"><img src="images/icon_left.png" alt="icon_left" style="cursor:pointer"></span></td>
-                  <td><a id="Contact_m2"></a></td>
-                  <td width="50" align="right" valign="top"><span class="vertical_align"><img src="images/icon_right.png" alt="icon_right" style="cursor:pointer"></span></td>
-                </tr>
-              </table></td>
-              </tr>
-            </table></td>
-        </tr>
-        <tr>
-          <td height="30">&nbsp;</td>
-        </tr>
-      </table></td>
-      <td width="5%">&nbsp;</td>
-    </tr>
-  </table>
+             <div  class="row tabs-pane active tab-container" id="gallery-2">
+            <div class="col-xs-1 col-md-2 col-lg-2 left-arrow left-arrow4-2"><img src="images/icon_left.png" alt="icon_left" style="cursor:pointer"></div>
+             <div class='col-xs-12 col-md-8 col-lg-8'>
+                  <div  id="slider4-2" class="gallery slider ">
+ 
+                      <div ><img src="images/pic_gallery_1.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_2.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_3.png" alt=""></div>
+                      <div ><img src="images/pic_gallery_4.png" alt=""></div>
+                     
+                    </div>
+                    <div class='dots-container4-2'></div>
+             </div>
+             <div class="col-xs-1 col-md-2 col-lg-2 right-arrow right-arrow4-2"><img src="images/icon_right.png" alt="icon_left" style="cursor:pointer;"></div>
+            </div>
 </div>
 
 
-<div id="Contact">
+
+<div data-scroll id="Contact">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td height="80" align="left" valign="top">&nbsp;</td>
@@ -1141,7 +688,7 @@ Nonthaburi 11140, THAILAND<br>
 
 
 
-<div id="Contact_m">
+<div data-scroll id="Contact_m">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="5%">&nbsp;</td>
@@ -1214,7 +761,7 @@ E-MAIL: info@goldencup.co.th </span></td>
 </div>
 
 
-<div id="Footer">
+<div data-scroll id="Footer">
   <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td width="5%">&nbsp;</td>
