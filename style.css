@@ -235,7 +235,6 @@ a:active {
 
 }
 
-
 .where_menu {
 	font-family: 'Kanit', sans-serif;
 	font-size: 1.5rem;
@@ -246,6 +245,7 @@ a:active {
 	background-color: #FC0;
 	text-align:center;
 	vertical-align: middle;
+	
 	height: 50px;
 	-webkit-border-radius:20px;
     -moz-border-radius:20px;
@@ -253,6 +253,7 @@ a:active {
 	text-decoration: none;
 }
 .where_menu_hover {
+	
 	font-family: 'Kanit', sans-serif;
 	font-size: 1.5rem;
 	font-style: normal;
@@ -267,73 +268,29 @@ a:active {
     -moz-border-radius:20px;
     border-radius:20px;
 	text-decoration: none;
+
 }
 .where_menu:link {
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.5rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 20px;
-	color: #a10d15;
+	
 	background-color: #FC0;
-	text-align:center;
-	vertical-align: middle;
-	height: 50px;
-	-webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-	text-decoration: none;
+	
 }
 .where_menu:hover {
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.5rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 20px;
-	color: #a10d15;
+	
 	background-color: #FF0;
-	text-align:center;
-	vertical-align: middle;
-	height: 50px;
-	-webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-	text-decoration: none;
+	
 }
 .where_menu:visited {
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.5rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 20px;
 	color: #a10d15;
 	background-color: #FC0;
-	text-align:center;
-	vertical-align: middle;
-	height: 50px;
-	-webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-	text-decoration: none;
+
 }
 .where_menu:active {
-	font-family: 'Kanit', sans-serif;
-	font-size: 1.5rem;
-	font-style: normal;
-	font-weight: 300;
-	line-height: 20px;
+
 	color: #a10d15;
 	background-color: #FC0;
-	text-align:center;
-	vertical-align: middle;
-	height: 50px;
-	-webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-	text-decoration: none;
+
 }
-
-
 
 
 .bg_mobile_menu {
@@ -813,7 +770,7 @@ padding: 0.7%;
 	.left-arrow, .right-arrow{
 		display: none !important;
 	}
-	.about_menu, .about_menu_hover{
+	.about_menu, .about_menu_hover, .where_menu, .where_menu_hover{
 		padding: 15px 20px;
 		white-space: nowrap;
 	}
@@ -859,7 +816,7 @@ padding: 0.7%;
 
     margin-top: 120px;
 	}
-	.about_menu, .about_menu_hover{
+	.about_menu, .about_menu_hover, .where_menu, .where_menu_hover{
 		padding: 15px 40px;
 		white-space: nowrap;
 	}
@@ -911,7 +868,7 @@ padding: 0.7%;
 	#About{
 		min-height: 950px;
 	}
-	.about_menu, .about_menu_hover{
+	.about_menu, .about_menu_hover, .where_menu, .where_menu_hover{
 		padding: 15px 60px;
 		white-space: nowrap;
 	}
