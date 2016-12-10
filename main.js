@@ -52,6 +52,10 @@ $(document).ready(function() {
       initTab($(this).get(0).id);
   });
 
+  $( ".slider_panel2" ).each(function( index ) {
+      initTab2($(this).get(0).id);
+  });
+
 
 
   $("#slider").slick({
@@ -79,6 +83,8 @@ $(document).ready(function() {
 
   initSlider4("4-1");
   initSlider4("4-2");
+
+   initSlider2("5-1");
 
 });
 
@@ -167,6 +173,25 @@ function initTab(div_id){
         $(div_id+' .tab-menu td.tab-menu').removeClass('about_menu_hover').addClass('about_menu');           
         $(this).parent().removeClass('about_menu').addClass('about_menu_hover');
         console.log(div_id);
+      }
+      $(div_id+' .tab-container').hide();
+      $(href).fadeIn('slow');
+  });
+}
+
+function initTab2(div_id){
+  div_id='#'+div_id;
+  $(div_id+' .tab-menu  a:not(:first)').addClass('inactive');
+  $(div_id+' .tab-container').hide();
+  $(div_id+' .tab-container:first').show();
+    
+  $(div_id+' .tab-menu  a').click(function(){
+      var href = $(this).attr('href');
+      console.log('initTab2: '+href);
+      if($(this).hasClass('where_menu')){ //this is the start of our condition 
+        $(div_id+' .tab-menu a').removeClass('where_menu_hover').addClass('where_menu');           
+        $(this).removeClass('where_menu').addClass('where_menu_hover');
+        // console.log(div_id);
       }
       $(div_id+' .tab-container').hide();
       $(href).fadeIn('slow');

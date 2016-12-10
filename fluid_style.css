@@ -40,20 +40,17 @@ img, object, embed, video {
 }
 
 
-/*#Contact {
+
+#Contact {
 	clear: both;
 	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}*/
-#Contact_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
 	width: 100%;
 	display: block;
 	background-color: #fa9c1f;
+	background-image:url(images/bg_5.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: 0 -300px;
 }
 #Footer {
 	clear: both;
@@ -120,12 +117,19 @@ img, object, embed, video {
 	width: 100%;
 	display: block;
 	background-color: #fa9c1f;
-	background-image:url(images/pic_map.png);
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	display:none;
-	min-height: 800px;
+	position: relative;
+	background-position: center bottom;
+
 }
+
+
+#Where_to_buy .map img{
+	clear: both;
+	width: 100%;
+	display: block;
+
+}
+
 
 #Where_to_buy_m {
 	clear: both;
@@ -141,25 +145,8 @@ img, object, embed, video {
 
 @media only screen and (min-width: 481px) {
 
-#Contact {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	/*background-image:url(images/bg_5.png);*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-position: 0 -300px;
-}
-#Contact_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
+
+
 #Footer {
 	clear: both;
 	float: left;
@@ -169,21 +156,7 @@ img, object, embed, video {
 	background-color: #a10d15;
 }
 
-#Where_to_buy {
-	clear: both;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	
-}
-#Where_to_buy_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
+
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -205,47 +178,4 @@ img, object, embed, video {
 	display: none;
 }
 
-#Contact {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	/*background-image:url(images/bg_4.png);*/
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-position: 0 -300px;
-}
-#Contact_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-
-}
-#Footer {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #a10d15;
-}
-#Where_to_buy {
-	clear: both;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-	background-color: #fa9c1f;
-	
-}
-#Where_to_buy_m {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: none;
-}
 }

@@ -799,6 +799,32 @@ padding: 0.7%;
 		padding-right: 20px;
 		margin-bottom: 30px;
 	}
+	#Contact .content{
+		margin-top: 40px;
+		padding: 10px;
+	}
+	#Where_to_buy {
+	margin-bottom: 100px;
+	}
+	#Where_to_buy .content{
+	bottom: -100px;
+	background-color:#a10d15;
+	position:absolute;
+	margin: 10px;
+	}
+	#Products .slider{
+		padding: 0 20px;
+	}
+	#where-desktop{
+		display:none;
+	}
+	#where-mobile{
+		display:block;
+	}
+	#where-mobile .where_menu{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
 
 }
 @media  screen and  (min-width: 768px) and (max-width: 1366px) {
@@ -826,6 +852,9 @@ padding: 0.7%;
 	#Products{
 		min-height: 710px;
 	}
+	#Products .slider{
+		padding: 0 20px;
+	}
 	.navbar{
 	height: 100px;
 	}
@@ -837,6 +866,8 @@ padding: 0.7%;
 	padding: 0 5px 0 5px !important;
 	display: inline !important;
 	margin-top: 35px;
+
+	
 }
 .shop_logo{
 		padding: 20px;
@@ -846,8 +877,28 @@ padding: 0.7%;
 		padding-right: 150px;
 		margin-bottom: 50px;
 	}
+	#Contact .content{
+		margin-top: 40px;
+		padding: 20px;
+	}
+	#Where_to_buy {
+	margin-bottom: 100px;
+	}
+	#Where_to_buy .content{
+	bottom: -100px;
+	background-color:#a10d15;
+	position:absolute;
+	}
 
-	
+	#where-desktop{
+		display:block;
+	}
+	#where-mobile{
+		display:none;
+	}
+	#Where_to_buy .slider{
+	margin: 30px;
+	}
 }
 @media  screen and  (min-width: 1367px) { 
 	.head_cs_width{
@@ -879,6 +930,9 @@ padding: 0.7%;
 	#Products{
 		min-height: 1000px;
 	}
+	#Products .slider{
+		padding: 0 100px;
+	}
 	.tab-menu{
 		margin-bottom: 40px;
 	}
@@ -898,6 +952,29 @@ padding: 0.7%;
 		padding-left: 200px;
 		padding-right: 200px;
 		margin-bottom: 50px;
+	}
+	#Contact .content{
+		margin-top: 60px;
+		padding: 30px;
+	}
+	#Where_to_buy {
+	margin-bottom: 50px;
+	}
+	#Where_to_buy .content{
+	bottom: -50px;
+	background-color:#a10d15;
+	position:absolute;
+	}
+
+	#Where_to_buy .slider{
+	margin: 30px;
+	}
+
+	#where-desktop{
+		display:block;
+	}
+	#where-mobile{
+		display:none;
 	}
 
 }
