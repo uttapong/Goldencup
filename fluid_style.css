@@ -50,7 +50,8 @@ img, object, embed, video {
 	background-image:url(images/bg_5.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: 0 -300px;
+	background-position: center bottom;
+	padding-bottom: 100px;
 }
 #Footer {
 	clear: both;
@@ -70,7 +71,7 @@ img, object, embed, video {
 	background-repeat: no-repeat;
 	background-color: #fa9c1f;
 	 background-size: 100% auto;
-	 background-position: 0 -20px;
+	 background-position: center bottom;
 	-webkit-transition: background-image 5s ease-in-out;
 	animation: animatedBackground 2s linear;
 }
@@ -97,6 +98,7 @@ img, object, embed, video {
 	background-color: #fff;
 	background-size: 100% auto;
 	 background-position: 0 -300px;
+	 padding-bottom: 100px
 }
 
 #Products {
@@ -108,7 +110,10 @@ img, object, embed, video {
 	background-repeat: no-repeat;
 	background-color: #f8f8f8;
 	background-size: 100% auto;
-	background-position: 0 -300px;
+	background-position: center bottom;
+	padding-bottom:100px;
+	color: #fff;
+	/*background-color:rgba(255, 255, 255, 0.0);*/
 }
 
 #Where_to_buy {

@@ -106,6 +106,7 @@ a:active {
 	font-weight: 300;
 	line-height: 21px;
 	color: #fa9c1f;
+	padding: 0px 50px;
 }
 
 .font_normal_6 {
@@ -811,6 +812,8 @@ padding: 0.7%;
 	background-color:#a10d15;
 	position:absolute;
 	margin: 10px;
+	padding:100px 0px;
+
 	}
 	#Products .slider{
 		padding: 0 20px;
@@ -850,7 +853,7 @@ padding: 0.7%;
 	margin: 50px 0 50px 0;
 	}
 	#Products{
-		min-height: 710px;
+		min-height: 850px;
 	}
 	#Products .slider{
 		padding: 0 20px;
@@ -873,8 +876,8 @@ padding: 0.7%;
 		padding: 20px;
 	}
 	.about-menu{
-		padding-left: 150px;
-		padding-right: 150px;
+		padding-left: 50px;
+		padding-right: 50px;
 		margin-bottom: 50px;
 	}
 	#Contact .content{
@@ -888,6 +891,7 @@ padding: 0.7%;
 	bottom: -100px;
 	background-color:#a10d15;
 	position:absolute;
+	padding:100px 0px;
 	}
 
 	#where-desktop{
@@ -983,6 +987,7 @@ padding: 0.7%;
 	bottom: -50px;
 	background-color:#a10d15;
 	position:absolute;
+	padding:100px 0px;
 	}
 
 	#Where_to_buy .slider{
@@ -1066,9 +1071,12 @@ padding: 0.7%;
 
 .shop_logo{
 	/*margin: 15px;*/
-	margin-top: 20px;
+	margin-top: 10px;
 	width: 14.28%;
 	float: left;
-	margin-bottom:40px;
+	margin-bottom:100px;
 
+}
+.gallery{
+	margin: 100px 0 0 0;
 }

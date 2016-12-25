@@ -11,10 +11,7 @@ $(document).on('scroll', function() {
     if($(this).scrollTop()>=$('#Products').position().top){
     // alert('xxx');
         $('#Products').css("background-image","url(images/bg_3.png)");
-        $('#Products').animate({
-          'background-position-x': '0%',
-          'background-position-y': '0%'
-        }, 500, 'linear');
+        // $('#Products').animate({ backgroundColor: "rgba(255,255,255,1.0)" }, 200, 'linear');
     }
 
     if($(this).scrollTop()>=$('#Gallery').position().top){
@@ -29,10 +26,10 @@ $(document).on('scroll', function() {
     if($(this).scrollTop()>=$('#Contact').position().top){
     // alert('xxx');
         $('#Contact').css("background-image","url(images/bg_4.png)");
-        $('#Contact').animate({
-          'background-position-x': '0%',
-          'background-position-y': '0%'
-        }, 500, 'linear');
+        // $('#Contact').animate({
+        //   'background-position-x': '0%',
+        //   'background-position-y': '0%'
+        // }, 500, 'linear');
     }
 })
 
